@@ -1,0 +1,14 @@
+{
+  "name": "septacular",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "babel-loader": "^4.0.0",
+    "css-loader": "^0.9.1",
+    "html-webpack-plugin": "^1.1.0",
+    "react": "^0.12.2",
+    "style-loader": "^0.8.3",
+    "stylus-loader": "^0.5.0",
+    "webpack": "^1.5.3"
+  }
+}
