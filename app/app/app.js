@@ -1,5 +1,5 @@
 require('./app.styl');
-let React = require('react');
+const React = require('react');
 
 export default React.createClass({
   render () {
