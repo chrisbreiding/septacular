@@ -1,3 +1,5 @@
+require('./lib/base.styl');
+
 const React = require('react');
 const Router = require('react-router');
 const App = React.createFactory(require('./app/app'));
