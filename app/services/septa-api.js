@@ -1,4 +1,4 @@
-const reqwest = require('reqwest');
+import reqwest from 'reqwest';
 
 const BASE_URL = 'http://www3.septa.org/hackathon/';
 

@@ -1,9 +1,10 @@
 require('./lib/base.styl');
 
-const React = require('react');
-const Router = require('react-router');
-const App = React.createFactory(require('./app/app'));
+import React from 'react';
+import Router from 'react-router';
+import AppComponent from './app/app';
 
+const App = React.createFactory(AppComponent);
 const Route = React.createFactory(Router.Route);
 
 const routes = Route({ handler: App, path: '/' });

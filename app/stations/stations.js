@@ -1,9 +1,9 @@
 require('./stations.styl');
 
-const React = require('react');
-const Reflux = require('reflux');
-const _ = require('lodash');
-const stationsStore = require('./stations-store');
+import React from 'react';
+import Reflux from 'reflux';
+import _ from 'lodash';
+import stationsStore from './stations-store';
 
 const RD = React.DOM;
 

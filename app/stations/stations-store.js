@@ -1,5 +1,5 @@
-const Reflux = require('reflux');
-const stationsService = require('../services/stations');
+import Reflux from 'reflux';
+import stationsService from '../services/stations';
 
 export default Reflux.createStore({
 

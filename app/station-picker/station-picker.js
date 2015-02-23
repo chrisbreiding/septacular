@@ -1,8 +1,9 @@
 require('./station-picker.styl');
 
-const React = require('react');
-const Stations = React.createFactory(require('../stations/stations'));
+import React from 'react';
+import StationsComponent from '../stations/stations';
 
+const Stations = React.createFactory(StationsComponent);
 const RD = React.DOM;
 
 export default React.createClass({

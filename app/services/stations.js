@@ -1,5 +1,5 @@
-const _ = require('lodash');
-const septaApi = require('./septa-api');
+import _ from 'lodash';
+import septaApi from './septa-api';
 
 const STATIONS_URL = 'locations/get_locations.php';
 const PROPS = {
