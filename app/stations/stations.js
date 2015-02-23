@@ -19,11 +19,26 @@ export default React.createClass({
       content = RD.p(null, 'No stations found');
     } else {
       content = RD.ul(null, _.map(this.state.stations, (station) => {
-        return RD.li({ key: station.id }, station.name);
+        let className = '';
+        if (this._matchesPicked('start', station.id)) {
+          className = 'start';
+        } else if (this._matchesPicked('destination', station.id)) {
+          className = 'destination';
+        }
+
+        return RD.li({
+          key: station.id,
+          className: className,
+          onClick: _.partial(this.props.onSelect, station)
+        }, station.name);
       }));
     }
 
     return RD.div({ className: 'stations' }, content);
+  },
+
+  _matchesPicked (type, id) {
+    return this.props[type] && this.props[type].id && this.props[type].id === id;
   }
 
 });

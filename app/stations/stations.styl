@@ -2,12 +2,44 @@
 
   li {
     border-top: solid 1px #e3e3e3;
-    margin: .5em .8em;
-    padding: .5em 0;
+    cursor: pointer;
+    padding: 0.8em;
 
     &:first-child {
       border-top: none;
     }
+
+    &.start,
+    &.destination {
+      padding: 0.6em;
+    }
+
+    &.start {
+      border: solid 0.2em #6AA589;
+    }
+
+    &.destination {
+      border: solid 0.2em #924C4C;
+    }
   }
 
+}
+
+.picking-start .stations li {
+  &:hover,
+  &:focus {
+    background: #B5D1C4;
+  }
+}
+
+.picking-destination .stations li {
+  &:hover,
+  &:focus {
+    background: #D39D9D;
+  }
+
+  &.start {
+    background: none;
+    cursor: default;
+  }
 }
